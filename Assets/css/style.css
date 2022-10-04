@@ -152,6 +152,36 @@ body {
     margin: 20px 40px; 
 }
 
+.bio-cards {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1080px;
+}
+
+.bio-card {
+    margin: 20px 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    flex-basis: 400px;
+    width: 400px;
+}
+
+.bio-card ul {
+    font-size: 20px;
+    /*list-style-position: inside; */
+    margin-left: 2em;
+    text-align: left;
+}
+
+.bio-card h2 {
+    font-size: 35px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+
 /* practice Examples */
 .practice-examples {
     scroll-margin-top: 5em;
@@ -268,6 +298,20 @@ footer div {
 
     .biography p {
         margin: 20px 100px;
+    }
+
+    .bio-cards {
+        margin: 0 0;
+        width: auto;
+    }
+
+    .bio-card {
+        flex-basis: 60%;
+        justify-content: space-evenly;
+    }
+
+    .bio-card h2 {
+        font-size: 40px;
     }
 
     .practices {
