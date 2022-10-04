@@ -40,13 +40,16 @@ header a {
 
 header nav {
     margin: 7px 0;
-    display: flex;
+    /*display: flex;*/
+    justify-content: space-evenly;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;*/
     align-items: center;
     list-style: none;
 }
@@ -54,9 +57,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
+    font-size: 1.0vw;
 }
 
 header nav ul li a:hover {
