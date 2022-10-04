@@ -155,6 +155,7 @@ body {
 /* practice Examples */
 .practice-examples {
     scroll-margin-top: 5em;
+    
 }
 
 /* .flex-row {
@@ -177,8 +178,11 @@ body {
     width: 400px;
 }
 
-.practice p {
+.practice ul {
     font-size: 20px;
+    /*list-style-position: inside; */
+    margin-left: 2em;
+    text-align: left;
 }
 
 .practice img {
@@ -188,6 +192,7 @@ body {
 .practice h2 {
     font-size: 35px;
     line-height: 1.3;
+    text-align: center;
 }
 
 .practice h3 {
@@ -221,7 +226,7 @@ body {
 .contact {
     text-align: center;
     font-size: 30px;
-    /* background-image: url("../images/phone-booth.jpg");
+    /* background-image: url("../images/fort.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; */
