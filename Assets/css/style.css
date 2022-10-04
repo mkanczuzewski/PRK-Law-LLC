@@ -146,11 +146,19 @@ body {
     /* color: var(--tertiary-color); */
     background: var(--secondary-color);
     font-size: 20px;
+    /* background-image: url("../images/fort.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
 }
 
 .biography p {
     margin: 20px 40px; 
 }
+
+/* .biography h2 {
+    color: var(--tertiary-color);
+} */
 
 .bio-cards {
     margin: 0 auto;
