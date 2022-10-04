@@ -96,7 +96,7 @@ body {
 .hero {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: flex-start;
     text-align: center;
     position: relative;
@@ -107,11 +107,15 @@ body {
 }
 
 .hero h1 {
-    position: relative;
     text-align: center;
     margin: 3.5%;
     font-size: 55px;
-    text-shadow: 0 0 30px var(--tertiary-color);
+}
+
+.hero h2 {
+    text-align: center;
+    margin: 3.5%;
+    font-size: 40px;
 }
 
 .hero-self {
@@ -121,13 +125,20 @@ body {
 
 .hero-self img {
     border-radius: 50%;
+    height: auto; 
+    width: auto; 
+    max-width: 400px; 
+    max-height: 400px;
 }
     
 .hero-self h3 {
-    font-style: italic;
+    /* font-style: italic;*/
     font-size: 25px;
     color: var(--primary-color);
-    text-shadow: 0 0 30px var(--tertiary-color);
+    width: 600px;
+    height: 100px;
+    margin-bottom: 5px;
+    overflow: hidden;
 }
 /* Biography */
 .biography {
@@ -306,6 +317,16 @@ footer div {
    
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media only screen and (max-width: 575px) {
+    .hero-self h3 {
+        /* font-style: italic;*/
+        font-size: 25px;
+        color: var(--primary-color);
+        width: 500px;
+        height: 150px;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    
     .biography p {
         margin: 20px 50px;
     }
@@ -314,4 +335,5 @@ footer div {
         margin: 20px 50px;
     }
 }
+
     
