@@ -10,6 +10,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-padding-top: 6rem;
+}
+/* Body */
+body {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+    font-family: 'Biryani';
+}
 
 /* apply styles to <header> */
 header {
@@ -17,6 +26,7 @@ header {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
@@ -25,13 +35,13 @@ header {
     font-family: 'Biryani';
 }
 
-header h1 {
+/* header h1 {
     font-weight: bold;
     font-size: 36px;
     color: var(--tertiary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
   
 header a {
     text-decoration: none;
@@ -52,12 +62,13 @@ header nav ul {
     grid-auto-columns: 1fr;*/
     align-items: center;
     list-style: none;
+    font-size: 20px;
 }
 
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.0vw;
+    /* font-size: 1.0vw; */
 }
 
 header nav ul li a:hover {
@@ -67,12 +78,7 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-/* Body */
-body {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
-    font-family: 'Biryani';
-}
+
 
 /* All Section Titles*/
 .section-title {
@@ -328,9 +334,9 @@ footer div {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header nav ul li a {
+    /* header nav ul li a {
         font-size: 30px;
-    }
+    } */
 
     .hero {
         background-size: cover;
@@ -398,7 +404,7 @@ footer div {
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    header nav ul li a {
+    /* header nav ul li a {
         padding: 5px 5px;
         font-size: 20px;
     }
@@ -407,7 +413,7 @@ footer div {
         justify-content: center;
         padding: 30 30;
 
-    }
+    } */
     
     .biography p {
         margin: 20px 50px;
@@ -420,6 +426,16 @@ footer div {
    
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media only screen and (max-width: 575px) {
+    html {
+        scroll-padding-top: 10rem;
+    }
+    
+    header nav ul{
+        align-items: center; 
+        justify-content: center; 
+        /* flex-direction: column; */
+    }
+
     .hero-self h3 {
         /* font-style: italic;*/
         font-size: 25px;
@@ -434,6 +450,14 @@ footer div {
         margin: 20px 50px;
     }
     
+    .bio-about1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .resource-container {
         margin: 20px 50px;
     }
