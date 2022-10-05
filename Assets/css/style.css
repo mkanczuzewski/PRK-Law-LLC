@@ -344,10 +344,16 @@ footer div {
         background-attachment: scroll;
     }  
 
-    .bio-about1 {
+    /* .bio-about1 {
         display: block;
+    } */
+    .bio-about1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-
     /* .biography p {
         margin: 20px 100px;
     }
