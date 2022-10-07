@@ -102,7 +102,7 @@ header nav ul li a:hover {
 /* Hero Style */
 .hero {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     /* flex-wrap: wrap; */
     align-items: flex-start;
     text-align: center;
@@ -442,11 +442,15 @@ footer div {
         /* flex-direction: column; */
     }
 
+    .hero-self {
+        text-align: left;
+    }
+
     .hero-self h3 {
         /* font-style: italic;*/
         font-size: 25px;
         color: var(--primary-color);
-        width: 500px;
+        width: 400px;
         height: 150px;
         margin-bottom: 5px;
         overflow: hidden;
@@ -469,4 +473,4 @@ footer div {
     }
 }
 
-    
+
