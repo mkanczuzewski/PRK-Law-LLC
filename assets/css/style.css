@@ -88,7 +88,7 @@ header nav ul li a:hover {
     padding-bottom: 20px; */
     text-align: center;
     margin: 35px auto 35px auto;
-    width: 50%;
+    /* width: 50%; */
 }
   
 .primary-border {
@@ -239,7 +239,7 @@ header nav ul li a:hover {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    width: 1080px;
+    /* width: 1080px; */
 }
 
 .practice {
@@ -295,7 +295,7 @@ header nav ul li a:hover {
 }
 
 .resource-container {
-    margin: 20px 400px;
+    margin: 20px 300px;
     color: var(--primary-color);
     font-size: 20px;
 }
@@ -313,7 +313,7 @@ header nav ul li a:hover {
 /* Footer */
 footer {
     background: var(--primary-color);
-    width: 100%;
+    /* width: 100%; */
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
