@@ -119,7 +119,7 @@ header nav ul li a:hover {
     bottom: 0;
     right: 0;
     z-index: -1;
-    opacity: .6;
+    opacity: .8;
 }
 
 .hero-self {
@@ -206,7 +206,7 @@ header nav ul li a:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
     flex-basis: 400px;
-    width: 400px;
+    /* width: 400px; */
     flex: 1 1 auto;
 }
 
@@ -220,7 +220,7 @@ header nav ul li a:hover {
 .bio-card h2 {
     font-size: 30px;
     line-height: 1.3;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -290,8 +290,8 @@ header nav ul li a:hover {
 /* Resources */
 .resources {
     scroll-margin-top: 5em;
-    color: var(--tertiary-color);
-    background: var(--secondary-color);
+    /* color: var(--tertiary-color); */
+    background: var(--tertiary-color);
 }
 
 .resource-container {
@@ -304,6 +304,7 @@ header nav ul li a:hover {
 .contact {
     text-align: center;
     font-size: 30px;
+    background: var(--secondary-color);
     /* background-image: url("../images/fort.jpeg");
     background-size: cover;
     background-position: center;
