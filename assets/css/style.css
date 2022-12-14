@@ -443,7 +443,7 @@ footer div {
         /* flex-direction: column; */
     }
 
-    .hero:before {
+    /* .hero:before {
         content: "";
         background-image: url("../images/USCISsmall.jpeg");
         position: absolute;
@@ -454,7 +454,7 @@ footer div {
         right: 0;
         z-index: -1;
         opacity: .6;
-    }
+    } */
     
     .hero-self {
         text-align: left;
