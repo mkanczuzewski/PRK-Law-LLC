@@ -10,7 +10,7 @@
     padding: 0;
 }
 html {
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 13rem;
 }
 /* Body */
 body {
@@ -132,8 +132,8 @@ header nav ul li a:hover {
 }
 .center-fit {
     display: block;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 75%;
     margin-left: auto;
     margin-right: auto;
     
