@@ -8,10 +8,9 @@
 * {
     margin: 0px 25px 0px 25px;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 html {
-    /* scroll-padding-top: 6rem; */
+    scroll-padding-top: 6rem;
 }
 /* Body */
 body {
@@ -22,24 +21,14 @@ body {
 
 /* apply styles to <header> */
 header {
-    /* padding: 20px 35px; */
     background-color: var(--tertiary-color);
-    /* display: center; */
-    /* justify-content: left; */
-    /* align-items: flex-end; */
-    /* flex-wrap: wrap; */
-    /* position: -webkit-sticky; */
     position: sticky;
     top: 0px;
     z-index: 9999;
-    
 }
 
 .logo {
     justify-content: left;
-    /* margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border: 0px 0px 0px 0px; */
 }
 
 header nav {
@@ -69,17 +58,11 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-
-
 /* All Section Titles*/
 .section-title {
-    font-size: 48px;
+    font-size: 35px;
     color: var(--primary-color);
-   /*  border-bottom: 3px solid; 
-    padding-bottom: 20px; */
     text-align: left;
-    /* margin: 35px auto 35px auto; */
-    /* width: 50%; */
 }
   
 .primary-border {
@@ -92,10 +75,6 @@ header nav ul li a:hover {
 
 /* Hero Style */
 .hero {
-    /* display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    align-items: flex-start; */
     position:relative;
 }
 
@@ -117,7 +96,6 @@ header nav ul li a:hover {
 
 .hero-self {
     font-weight: 900;
-    /* margin: 3.5%; */
 }
 
 .hero-self h2 {
@@ -153,11 +131,16 @@ header nav ul li a:hover {
     height: 100%;
 }
 .center-fit {
+    display: block;
     max-width: 50%;
     max-height: 50%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
-
+.centerimage {
+    justify-content: center;
+}
 /* practice Examples */
 .practice-examples {
     scroll-margin-top: 5em;
@@ -169,73 +152,13 @@ header nav ul li a:hover {
   } */
 
 .practices {
-    /* margin: 0 auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center; */
-    /* width: 1080px; */
+
 }
-
-.practice {
-    /* margin: 20px 20px; */
-    /* background: var(--secondary-color); */
-    /* color: var(--primary-color); */
-    /* flex-basis: 400px;
-    width: 400px; */
-}
-
-.practice:not(:last-child) {
-    /* border-bottom: 1px solid var(--primary-color); */
-}
-
-.practice h2 {
-    /* font-size: 35px;
-    line-height: 1.3;
-    text-align: center;
-    margin-bottom: 20px; */
-}
-
-.pract-area {
-    /* display: flex; */
-}
-
-.pract-area img {
-    /* width: 400px;
-    margin-bottom: 20px; */
-}
-
-.pract-area ul {
-    /* font-size: 20px;
-    list-style-position: inside;
-    margin-left: 2em;
-    text-align: left;
-    align-self: center;*/
-} 
-
-/* .practice:first-of-type {
-    flex-basis: 800px;
-    width: 800px;
-} */
-
-/* .practice:hover img {
-    opacity: .5;
-}  */
 
 /* Biography */
 .biography {
     scroll-margin-top: 5em;
-    /* color: var(--tertiary-color); */
-    /* background: var(--secondary-color); */
     font-size: 20px;
-    /* background-image: url("../images/fort.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
-    /*display: flex;
-    justify-content: center;*/
-    /* flex-wrap: wrap; */
-    /*align-items: flex-start;*/
-    /*text-align: center;*/
     position: relative;
 }
 
@@ -249,12 +172,10 @@ header nav ul li a:hover {
 }
 
 .bust1 img{
-    /* border-radius: 50%; */
     height: auto; 
     width: auto; 
     max-width: 367px; 
     max-height: 424px;
-    /* flex: 1 1 auto; */
     margin: 10px;
 }
 
@@ -274,7 +195,6 @@ header nav ul li a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* width: 1080px; */
 }
 
 .bio-card {
@@ -282,13 +202,11 @@ header nav ul li a:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
     flex-basis: 400px;
-    /* width: 400px; */
     flex: 1 1 auto;
 }
 
 .bio-card ul {
     font-size: 20px;
-    /*list-style-position: inside; */
     margin-left: 2em;
     text-align: left;
 }
@@ -303,12 +221,8 @@ header nav ul li a:hover {
 .contact {
     text-align: left;
     font-size: 20px;
-    /* background: var(--secondary-color); */
-    /* background-image: url("../images/fort.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
 }
+
 /* Start example code */
 #fcf-form {
     display:block;
@@ -472,8 +386,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 /* End example code */
 
-
-
 /* Footer */
 footer {
     background: var(--primary-color);
@@ -484,16 +396,30 @@ footer {
     flex-wrap: wrap;
   }
 
-footer h2 {
+/* footer h2 {
     color: var(--tertiary-color);
     font-size: 30px;
     margin: 0;
-}
+} */
 
 footer div {
     line-height: 1.5;
     text-align: right;
     color: var(--tertiary-color);
+}
+
+.paypal a{
+    padding: 10px 15px;
+    font-weight:bolder;
+    text-decoration: none;
+    color: var(--terterary-color);
+}
+
+.paypal a:hover {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
