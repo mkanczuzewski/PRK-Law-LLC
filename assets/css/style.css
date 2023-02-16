@@ -1,25 +1,21 @@
-:root {
-    --primary-color: #2F5496;
-    --secondary-color: #c5c5c5;
-    --tertiary-color: #ffffff;
-    --quaternary-color: #cacaa4;
-}
+    :root {
+        --primary-color: #2F5496;
+        --secondary-color: #c5c5c5;
+        --tertiary-color: #ffffff;
+        --quaternary-color: #cacaa4;
+    }
 
-* {
-    margin: 0px 25px 0px 25px;
-    padding: 0;
-}
-html {
-    scroll-padding-top: 13rem;
-}
-/* Body */
-body {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
-    font-family: 'Century';
-}
+    html {
+        scroll-padding-top: 13rem;
+    }
 
-/* apply styles to <header> */
+    body {
+        color: var(--primary-color);
+        background: var(--tertiary-color);
+        font-family: 'Century';
+    }
+
+    /* apply styles to <header> */
 header {
     background-color: var(--tertiary-color);
     position: sticky;
@@ -32,14 +28,6 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-/* .logo {
-    justify-content: left;
-}
-
-.flag {
-    justify-content: right;
-} */
 
 header nav {
     justify-content: center;
@@ -55,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     font-weight: lighter;
     text-decoration: none;
     color: var(--primary-color);
@@ -64,7 +52,7 @@ header nav ul li a {
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--tertiary-color);
-    border-radius: 15px;
+    /* border-radius: 15px; */
     text-shadow: none;
 }
 
@@ -95,12 +83,12 @@ header nav ul li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
-    left: 25px;
+    left: 0px;
     bottom: 0;
-    right: -26px;
+    right: 0px;
     border: 0px;
     z-index: -1;
-    opacity: .8;
+    opacity: .4;
 
 }
 
@@ -590,5 +578,3 @@ footer div {
         margin: 20px 50px;
     }
 }
-
-
