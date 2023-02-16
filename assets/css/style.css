@@ -27,9 +27,19 @@ header {
     z-index: 9999;
 }
 
-.logo {
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .logo {
     justify-content: left;
 }
+
+.flag {
+    justify-content: right;
+} */
 
 header nav {
     justify-content: center;
