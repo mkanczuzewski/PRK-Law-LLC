@@ -6,7 +6,7 @@
     }
 
     html {
-        scroll-padding-top: 13rem;
+        scroll-padding-top: 16rem;
     }
 
     body {
@@ -397,9 +397,12 @@ footer {
     background: var(--primary-color);
     /* width: 100%; */
     padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
   }
 
 /* footer h2 {
@@ -408,14 +411,15 @@ footer {
     margin: 0;
 } */
 
-footer div {
+.copyright {
     line-height: 1.5;
-    text-align: right;
+    text-align: left;
+    vertical-align:text-bottom;
     color: var(--tertiary-color);
 }
 
 .paypal a{
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     font-weight:bolder;
     text-decoration: none;
     color: var(--terterary-color);
