@@ -221,6 +221,14 @@ header nav ul li a:hover {
     font-size: 20px;
 }
 
+.contact-about1 {
+    /* display:flex;
+    justify-content:space-around; */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
 /* Start example code */
 #fcf-form {
     display:block;
@@ -239,7 +247,7 @@ header nav ul li a:hover {
     padding-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .fcf-form-group {
@@ -422,93 +430,27 @@ footer div {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    /* header nav ul li a {
-        font-size: 30px;
-    } */
-
     .hero {
         background-size: cover;
         background-position: top 10%;
         background-attachment: scroll;
     }  
-
-    /* .bio-about1 {
-        display: block;
-    } */
     .bio-about1{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-    }
-    /* .biography p {
-        margin: 20px 100px;
-    }
-
-    .bio-cards {
-        margin: 0 0;
-        width: auto;
-    }
-
-    .bio-card {
-        flex-basis: 60%;
-        justify-content: space-evenly;
-    }
-
-    .bio-card h2 {
-        font-size: 40px;
-    } */
-
-    /* .practices {
-        margin: 0 0;
-        width: auto;
-    }
-
-    .practice {
-        flex-basis: 60%;
-        justify-content: space-evenly;
-    }
-
-    .practice h2 {
-        font-size: 40px;
-    }
-    
-    .practice h3 {
-        font-size: 30px;
-    }
-
-    .practice p {
-        font-size: 20px;
-    } */
-
-    .pract-area {
-        display: block;
+        text-align: left;
     }
 
     .practice h2 {
         text-align: left;
-    }
-
-    .resource-container {
-        margin: 20px 100px;
     }
 }
 
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    /* header nav ul li a {
-        padding: 5px 5px;
-        font-size: 20px;
-    }
-
-    header nav ul {
-        justify-content: center;
-        padding: 30 30;
-
-    } */
-    
     .biography p {
         margin: 20px 50px;
     }
@@ -526,22 +468,8 @@ footer div {
     
     header nav ul{
         align-items: center; 
-        justify-content: center; 
-        /* flex-direction: column; */
+        justify-content: space-around;
     }
-
-    /* .hero:before {
-        content: "";
-        background-image: url("../images/USCISsmall.jpeg");
-        position: absolute;
-        background-size: cover;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        opacity: .6;
-    } */
     
     .hero-self {
         text-align: left;
@@ -560,21 +488,11 @@ footer div {
     .biography p {
         margin: 20px 50px;
     }
-    
-    .pract-area img {
-        width: 350px;
-        margin-bottom: 20px;
-    }
 
     .bio-about1{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
-
-    .resource-container {
-        margin: 20px 50px;
-    }
-}
