@@ -57,6 +57,24 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+button {
+    background-color: #2F5496;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    position: absolute;
+}
+
+button:hover {
+    background-color: #c5c5c5;
+    color: black;
+}
+
 /* All Section Titles*/
 .section-title {
     font-size: 35px;
@@ -229,24 +247,6 @@ header nav ul li a:hover {
     justify-content: center;
     /* align-items:baseline; */
 }
-
-button {
-    background-color: #2F5496;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    position: absolute;
-}
-
-button:hover {
-    background-color: #c5c5c5;
-    color: black;
-  }
 
 /* Footer */
 footer {
