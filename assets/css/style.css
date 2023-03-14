@@ -17,8 +17,8 @@
 
     /* apply styles to <header> */
 header {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: var(--tertiary-color);
+    color: black;
     position: sticky;
     top: 0px;
     z-index: 9999;
@@ -48,6 +48,11 @@ header a:visited {
     flex-wrap: wrap;
 } */
 
+.logo{
+    display: grid;
+    grid-auto-flow: row;
+}
+
 nav {
     justify-content: center;
 }
@@ -63,14 +68,14 @@ nav ul {
 
 nav ul li a:link {
     /* padding: 10px 15px; */
-    font-weight: bolder;
+    /* font-weight: bolder; */
     text-decoration: none;
     color: black;
 }
 
 nav ul li a:visited {
     /* padding: 10px 15px; */
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
     color: black;
 }
