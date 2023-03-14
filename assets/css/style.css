@@ -61,20 +61,27 @@ nav ul {
     font-size: 20px;
 }
 
-nav ul li a {
+nav ul li a:link {
     /* padding: 10px 15px; */
-    font-weight: lighter;
+    font-weight: bolder;
     text-decoration: none;
-    /* color: var(--primary-color); */
+    color: black;
 }
-/* 
+
+nav ul li a:visited {
+    /* padding: 10px 15px; */
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
 nav ul li a:hover {
     background: var(--primary-color);
     color: var(--tertiary-color);
     border-radius: 15px;
     padding: 15px 32px;
     text-shadow: none;
-} */
+}
 
 button {
     background-color: #2F5496;
@@ -341,6 +348,14 @@ footer {
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    nav ul li a:hover {
+        background: transparent;
+        color: black;
+        border-radius: 0px;
+        padding: 0px 0px;
+        text-shadow: none;
+    }
+    
     .biography p {
         margin: 20px 50px;
     }
