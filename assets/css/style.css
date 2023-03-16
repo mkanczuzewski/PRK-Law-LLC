@@ -236,11 +236,19 @@ button:hover {
     text-align: center;
 }
 
+.practices-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .practices {
     display: flex;
     justify-content:flex-start;
     /* flex-flow: row;
     flex: initial; */
+    margin-top: 20px;
 }
 
 .practices ul {
@@ -352,7 +360,7 @@ address {
 
 .contact-button {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .map {
