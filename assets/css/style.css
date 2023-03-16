@@ -25,13 +25,14 @@ header {
 }
 
 header a:link {
-    color: var(--tertiary-color);
+    color: black;
     background-color: transparent;
     text-decoration: none;
+    font-size: 20px;
 }
 
 header a:visited {
-    color: var(--tertiary-color);
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
@@ -39,6 +40,12 @@ header a:visited {
 .first-header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sub-header{
+    display: flex;
+    justify-content:end;
     flex-wrap: wrap;
 }
 
@@ -51,6 +58,11 @@ header a:visited {
 .logo{
     display: grid;
     grid-auto-flow: row;
+}
+
+.imm-text{
+    font-size: 12px;
+    font-weight: bold;
 }
 
 nav {
@@ -113,13 +125,13 @@ button:hover {
     text-align: left;
 }
   
-.primary-border {
+/* .primary-border {
     border-color: var(--primary-color);
-}
+} */
   
-.secondary-border {
+/* .secondary-border {
     border-color: var(--tertiary-color);
-}
+} */
 
 /* Hero Style */
 .hero {
@@ -170,14 +182,22 @@ button:hover {
 .about {
     scroll-margin-top: 5em;
     font-size: 20px;
-    position: relative;
+    /* position: relative; */
+
     margin: 0;
     padding: 0;
 }
-.about img {
-    display: grid;
-    height: 100%;
+
+.about2 {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-flow: row;
 }
+
+/* .about img {
+    display: grid;
+} */
+
 .center-fit {
     display: block;
     max-width: 75%;
