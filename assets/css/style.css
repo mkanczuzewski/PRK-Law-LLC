@@ -183,36 +183,68 @@ button:hover {
     scroll-margin-top: 5em;
     font-size: 20px;
     /* position: relative; */
-
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .about2 {
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     flex-flow: row;
+    flex: initial;
 }
 
-/* .about img {
-    display: grid;
+.about2 p {
+    margin-right: 20px;
+    margin-top: 150px;
+}
+
+/* .about2 img {
+    max-width: 100%;
+    max-height: 100%;
 } */
 
 .center-fit {
     display: block;
-    max-width: 75%;
-    max-height: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    object-fit: contain;
     
 }
-.centerimage {
-    justify-content: center;
-}
-/* practice Examples */
+
+/* practice */
 .practice-examples {
     scroll-margin-top: 5em;
     font-size: 20px;
+}
+
+.practices-header {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    flex: initial;
+}
+
+.practices-header p {
+    margin-right: 20px;
+    margin-top: 150px;
+}
+
+.practice-title {
+    text-align: center;
+}
+
+.practices {
+    display: flex;
+    justify-content:flex-start;
+    /* flex-flow: row;
+    flex: initial; */
+}
+
+.practices ul {
+    margin-top: 150px;
 }
 
 .practices ul li {
@@ -251,7 +283,8 @@ button:hover {
 } */
 
 .bio-info1 p {
-    margin: 10px 40px;
+    margin-top: 100px;
+    margin-left: 40px;
 }
 /* 
 .bio-cards1 {
@@ -301,6 +334,18 @@ button:hover {
     align-items:center */
 }
 
+.contact-about1 a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.contact-about1 a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 address {
     font-style: normal;
 }
@@ -308,6 +353,7 @@ address {
 .contact-button {
     display: flex;
     justify-content: center;
+    font-family: 'Century';
     /* align-items:baseline; */
 }
 
@@ -347,6 +393,17 @@ footer {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    .about2 {
+        display: flex;
+        /* justify-content: space-around; */
+        flex-flow:column-reverse;
+    }
+
+    .about2 p {
+        margin-right: auto;
+        margin-top: auto;
+    }
+
     .hero {
         background-size: cover;
         background-position: top 10%;
@@ -360,9 +417,32 @@ footer {
         text-align: left;
     }
 
+    .center-fit {
+        max-width: 75%;
+        max-height: 75%;        
+    }
+
     .practice h2 {
         text-align: left;
     }
+
+    .practices-header {
+        flex-flow:column-reverse;
+    }
+
+    .practices-header p {
+        margin-right: auto;
+        margin-top: auto;
+    }
+
+    .practices {
+        flex-flow: column;
+    }
+
+    .practices ul {
+        margin-top: auto;
+    }
+
     .contact-about2 {
         display: grid;
         grid-auto-flow: row;
