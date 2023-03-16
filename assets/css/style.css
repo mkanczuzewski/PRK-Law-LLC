@@ -394,7 +394,7 @@ footer {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header a:link {
-        font-size: 10px;
+        font-size: 15px;
     }
     .about2 {
         display: flex;
