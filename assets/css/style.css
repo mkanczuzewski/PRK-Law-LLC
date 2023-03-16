@@ -353,8 +353,11 @@ address {
 .contact-button {
     display: flex;
     justify-content: center;
-    font-family: 'Century';
-    /* align-items:baseline; */
+}
+
+.map {
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer */
