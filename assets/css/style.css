@@ -403,13 +403,19 @@ footer {
     .resource-container {
         margin: 20px 50px;
     }
+    
     .contact-about2 {
         display: grid;
         grid-auto-flow: row;
         grid-auto-columns: 1fr;
     }
+
+    .about-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
-   
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media only screen and (max-width: 575px) {
     html {
